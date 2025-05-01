@@ -1,6 +1,9 @@
 **Introduction:** The restaurant industry is highly competitive and reviews strongly influence success. Restaurants need timely and detailed feedback for continuous improvement and innovation. The goal of the present study is to build a multi-label sentiment classifier for restaurant reviews that analyzes overall and aspect-based (food, service, ambiance, price, context) sentiment to provide timely and granular feedback for restaurants.
+
 **Methods:** Using keyword spotting for aspect identification and data from the Yelp open database, we compared a TF-IDF + Logistic regression baseline model with a fine-tuned DistilBERT transformer model to predict sentiment for the 5 aspects and an overall review sentiment. VADER was used to generate proxy labels for sentiment classification for the entire Yelp database review set due to the large data scale. However, our approach was corroborated by using human-labeled star ratings to predict overall sentiment and training/testing both models using this data.
+
 **Results:** 1.5 million reviews were included (80%/20% train/test split).The transformer-based model had superior precision, recall, weighted F1-score, accuracy and micro/macro averages across all 6 labels compared to the baseline logistic regression model. For the overall sentiment, the superior performance was corroborated using data with human-generated manual labels to complement experiments with VADER generated proxy labels. 
+
 **Conclusions:** A fine-tuned transformer (DistilBERT) model is highly effective for multi-aspect and overall sentiment classification for restaurant reviews, significantly outperforming a logistic regression model. This should prove useful for the provision of rapid granular and summary review analysis for restaurants for continuous improvement.
 
 Here is a summary of key quantitative results for the model with aspect and overall sentiment classification, trained using >1.5 million reviews (proxy-labeled with VADER):
