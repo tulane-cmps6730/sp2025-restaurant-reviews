@@ -1,3 +1,6 @@
+**A Comprehensive Restaurant Review Sentiment Classifier Using a Transformer Model**
+**CMPS 6730 - Aaron Dumont and Jacob Schenck**
+
 **Introduction:** The restaurant industry is highly competitive and reviews strongly influence success. Restaurants need timely and detailed feedback for continuous improvement and innovation. The goal of the present study is to build a multi-label sentiment classifier for restaurant reviews that analyzes overall and aspect-based (food, service, ambiance, price, context) sentiment to provide timely and granular feedback for restaurants.
 
 **Methods:** Using keyword spotting for aspect identification and data from the Yelp open database, we compared a TF-IDF + Logistic regression baseline model with a fine-tuned DistilBERT transformer model to predict sentiment for the 5 aspects and an overall review sentiment. VADER was used to generate proxy labels for sentiment classification for the entire Yelp database review set due to the large data scale. However, our approach was corroborated by using human-labeled star ratings to predict overall sentiment and training/testing both models using this data.
