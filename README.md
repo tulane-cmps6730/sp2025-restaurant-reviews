@@ -1,4 +1,5 @@
 **A Comprehensive Restaurant Review Sentiment Classifier Using a Transformer Model**
+
 **CMPS 6730 - Aaron Dumont and Jacob Schenck**
 
 **Introduction:** The restaurant industry is highly competitive and reviews strongly influence success. Restaurants need timely and detailed feedback for continuous improvement and innovation. The goal of the present study is to build a multi-label sentiment classifier for restaurant reviews that analyzes overall and aspect-based (food, service, ambiance, price, context) sentiment to provide timely and granular feedback for restaurants.
